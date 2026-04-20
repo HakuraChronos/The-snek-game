@@ -1,0 +1,108 @@
+Loading Dungeon Snake...
+INFO: Initializing raylib 5.0
+INFO: Platform backend: DESKTOP (GLFW)
+INFO: Supported raylib modules:
+INFO:     > rcore:..... loaded (mandatory)
+INFO:     > rlgl:...... loaded (mandatory)
+INFO:     > rshapes:... loaded (optional)
+INFO:     > rtextures:. loaded (optional)
+INFO:     > rtext:..... loaded (optional)
+INFO:     > rmodels:... loaded (optional)
+INFO:     > raudio:.... loaded (optional)
+INFO: DISPLAY: Device initialized successfully
+INFO:     > Display size: 1920 x 1080
+INFO:     > Screen size:  800 x 840
+INFO:     > Render size:  800 x 840
+INFO:     > Viewport offsets: 0, 0
+INFO: GLAD: OpenGL extensions loaded successfully
+INFO: GL: Supported extensions count: 247
+INFO: GL: OpenGL device information:
+INFO:     > Vendor:   Intel
+INFO:     > Renderer: Intel(R) Iris(R) Xe Graphics
+INFO:     > Version:  3.3.0 - Build 32.0.101.7084
+INFO:     > GLSL:     3.30 - Build 32.0.101.7084
+INFO: GL: VAO extension detected, VAO functions loaded successfully
+INFO: GL: NPOT textures extension detected, full NPOT textures supported
+INFO: GL: DXT compressed textures supported
+INFO: GL: ETC2/EAC compressed textures supported
+INFO: PLATFORM: DESKTOP (GLFW): Initialized successfully
+INFO: TEXTURE: [ID 1] Texture loaded successfully (1x1 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 1] Default texture loaded successfully
+INFO: SHADER: [ID 1] Vertex shader compiled successfully
+INFO: SHADER: [ID 2] Fragment shader compiled successfully
+INFO: SHADER: [ID 3] Program shader loaded successfully
+INFO: SHADER: [ID 3] Default shader loaded successfully
+INFO: RLGL: Render batch vertex buffers loaded successfully in RAM (CPU)
+INFO: RLGL: Render batch vertex buffers loaded successfully in VRAM (GPU)
+INFO: RLGL: Default OpenGL state initialized successfully
+INFO: TEXTURE: [ID 2] Texture loaded successfully (128x128 | GRAY_ALPHA | 1 mipmaps)
+INFO: FONT: Default font loaded successfully (224 glyphs)
+INFO: TIMER: Target time per frame: 16.667 milliseconds
+INFO: FILEIO: [images/road-1.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (1695x1716 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 3] Texture loaded successfully (1695x1716 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/road-3.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (1719x1733 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 4] Texture loaded successfully (1719x1733 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/road-4.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (766x771 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 5] Texture loaded successfully (766x771 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/bush-2.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (855x672 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 6] Texture loaded successfully (855x672 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/bush-3.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (751x627 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 7] Texture loaded successfully (751x627 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/apple.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (598x667 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 8] Texture loaded successfully (598x667 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/greenapple.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (598x667 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 9] Texture loaded successfully (598x667 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/Key.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (146x161 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 10] Texture loaded successfully (146x161 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/Door.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (98x130 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 11] Texture loaded successfully (98x130 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/trap-1.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (371x655 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 12] Texture loaded successfully (371x655 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/spider.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (759x550 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 13] Texture loaded successfully (759x550 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/wall-3.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (1671x1701 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 14] Texture loaded successfully (1671x1701 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/wall-corner.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (1685x1718 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 15] Texture loaded successfully (1685x1718 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/Worm head.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (352x271 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 16] Texture loaded successfully (352x271 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/Worm body.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (377x222 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 17] Texture loaded successfully (377x222 | R8G8B8A8 | 1 mipmaps)
+INFO: FILEIO: [images/Worm tail.png] File loaded successfully
+INFO: IMAGE: Data loaded successfully (431x157 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 18] Texture loaded successfully (431x157 | R8G8B8A8 | 1 mipmaps)
+INFO: TEXTURE: [ID 3] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 4] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 5] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 6] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 7] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 8] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 9] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 10] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 11] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 12] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 13] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 14] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 15] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 16] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 17] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 18] Unloaded texture data from VRAM (GPU)
+INFO: TEXTURE: [ID 2] Unloaded texture data from VRAM (GPU)
+INFO: SHADER: [ID 3] Default shader unloaded successfully
+INFO: TEXTURE: [ID 1] Default texture unloaded successfully
+INFO: Window closed successfully
