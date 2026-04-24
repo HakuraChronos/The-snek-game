@@ -22,7 +22,7 @@ int process_item_collision(int item_type, struct SnakeNode* head) {
         add_score(10);
         increment_apples();
         map[head->y][head->x] = MAP_PATH; // Clear the apple
-        spawn_apple();
+        // spawn_apple(); // Disabled random spawning
         return 0; // Game continues
     }
     else if (item_type == MAP_ROTTEN_APPLE) {

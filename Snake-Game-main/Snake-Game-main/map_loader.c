@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "map_loader.h"
 #include "raylib.h"
+#include "goal_manager.h"
 
 int map[MAX_ROWS][MAX_COLS];
 int map_rows = 0;
@@ -120,13 +121,22 @@ static void draw_sprite(Texture2D tex, int px, int py, int offx, int offy, int w
 void render_map(struct SnakeNode* snake) {
     ClearBackground(BLACK);
 
-    // Reveal 5x5 area around snake head
-    for (int i = -2; i <= 2; i++) {
-        for (int j = -2; j <= 2; j++) {
-            int vr = snake->y + i;
-            int vc = snake->x + j;
-            if (vr >= 0 && vr < map_rows && vc >= 0 && vc < map_cols)
-                visited[vr][vc] = 1;
+    // If player has key and 15+ apples, reveal the whole map
+    if (has_key() && get_apples_eaten() >= 15) {
+        for (int r = 0; r < map_rows; r++) {
+            for (int c = 0; c < map_cols; c++) {
+                visited[r][c] = 1;
+            }
+        }
+    } else {
+        // Otherwise reveal 5x5 area around snake head
+        for (int i = -2; i <= 2; i++) {
+            for (int j = -2; j <= 2; j++) {
+                int vr = snake->y + i;
+                int vc = snake->x + j;
+                if (vr >= 0 && vr < map_rows && vc >= 0 && vc < map_cols)
+                    visited[vr][vc] = 1;
+            }
         }
     }
 
@@ -157,6 +167,7 @@ void render_map(struct SnakeNode* snake) {
 
                 // ── Bush / inner wall ────────────────────────────────────────
                 } else if (cell == MAP_WALL) {
+                    DrawRectangle(px, py, CELL_SIZE, CELL_SIZE, (Color){ 139, 69, 19, 255 }); // SaddleBrown background
                     draw_tile(map_tex.bush[v % 2], px, py, CELL_SIZE, 0);
 
                 // ── Trap ─────────────────────────────────────────────────────
