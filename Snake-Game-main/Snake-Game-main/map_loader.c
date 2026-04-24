@@ -120,9 +120,9 @@ static void draw_sprite(Texture2D tex, int px, int py, int offx, int offy, int w
 void render_map(struct SnakeNode* snake) {
     ClearBackground(BLACK);
 
-    // Reveal 4x4 area around snake head
-    for (int i = -2; i <= 1; i++) {
-        for (int j = -2; j <= 1; j++) {
+    // Reveal 5x5 area around snake head
+    for (int i = -2; i <= 2; i++) {
+        for (int j = -2; j <= 2; j++) {
             int vr = snake->y + i;
             int vc = snake->x + j;
             if (vr >= 0 && vr < map_rows && vc >= 0 && vc < map_cols)
