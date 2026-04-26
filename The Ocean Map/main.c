@@ -220,8 +220,8 @@ found_start:
             DrawRectangle(0, 0, screenWidth, screenHeight + 40, Fade(BLACK, 0.7f));
             
             if (has_won()) {
-                DrawText("Congrats, u've escaped.", screenWidth/2 - 160, screenHeight/2 - 50, 25, GREEN);
-                DrawText("Please proceed to the next map. Hehe", screenWidth/2 - 200, screenHeight/2 - 10, 20, GREEN);
+                DrawText("Congratulations, u've won.", screenWidth/2 - 160, screenHeight/2 - 50, 25, GREEN);
+                DrawText("Thanks for playing our game.", screenWidth/2 - 175, screenHeight/2 - 10, 25, GREEN);
             } else {
                 DrawText("GAME OVER!", screenWidth/2 - 90, screenHeight/2 - 30, 30, RED);
             }
